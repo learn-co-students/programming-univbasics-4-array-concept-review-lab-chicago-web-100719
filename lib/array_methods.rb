@@ -1,11 +1,18 @@
 def find_element_index(array, value_to_find)
-  # Add your solution here
+  array.index(value_to_find)
 end
 
 def find_max_value(array)
-  # Add your solution here
+  highest_value = array.max
+  count = 0
+
+  while count < array.length do
+    break if count == highest_value
+    count += 1
+  end
+  p highest_value
 end
 
 def find_min_value(array)
-  # Add your solution here
+  array.min
 end
